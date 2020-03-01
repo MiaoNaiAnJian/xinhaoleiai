@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>唉:C。。。</title>
+</head>
+
+<body>
+  <a-scene>
+  <a-camera position='0 0 10' user-height='0'></a-camera>
+  <a-sphere src="moon_atmos_4096.jpg" radius="6" segments-height="53"> 
+     <a-animation attribute="rotation"
+              dur="10000"
+              fill= "forwards"
+              to="0 -360 0"
+              easing="linear"
+              repeat="indefinite"></a-animation>
+  </a-sphere>
+  <a-sphere src="earths_atmos_4096.jpg" radius="8" segments-height="53"> 
+     <a-animation attribute="rotation"
+              dur="10000"
+              fill= "forwards"
+              to="0 360 0"
+              easing="linear"
+              repeat="indefinite"></a-animation>
+  </a-sphere>
+    <a-sphere src="mars.jpg" radius="4" segments-height="53"> 
+     <a-animation attribute="rotation"
+              dur="10000"
+              fill= "forwards"
+              to="0 -360 0"
+              easing="linear"
+              repeat="indefinite"></a-animation>
+  </a-sphere>
+    <a-sphere src="silver.jpg" radius="2" segments-height="53"> 
+     <a-animation attribute="rotation"
+              dur="10000"
+              fill= "forwards"
+              to="0 -360 0"
+              easing="linear"
+              repeat="indefinite"></a-animation>
+  </a-sphere>
+     <a-sphere src="rainbows.jpg" radius="1" segments-height="53"> 
+     <a-animation attribute="rotation"
+              dur="10000"
+              fill= "forwards"
+              to="0 360 0"
+              easing="linear"
+              repeat="indefinite"></a-animation>
+  </a-sphere>
+  <a-sky segments-height="100" segments-width="100"  src="stars_sky_night_113553_3100x1740.jpg" color="#555" rotation="0 -90 0"></a-sky>
+</a-scene>
+  <script src='aframe.min.js'></script>
+
+  
+</body>
+</html>
